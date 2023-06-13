@@ -10,17 +10,7 @@ import com.company.albertsonstest_kushallingarkar.R
 
 class AcronymAdapter(private val meanings: List<Acronym>) : BaseAdapter() {
 
-    override fun getCount(): Int {
-        return meanings.size
-    }
 
-    override fun getItem(position: Int): Any {
-        return meanings[position]
-    }
-
-    override fun getItemId(position: Int): Long {
-        return position.toLong()
-    }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var view = convertView
